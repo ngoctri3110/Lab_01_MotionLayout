@@ -6,8 +6,16 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="2000">
-       <KeyFrameSet></KeyFrameSet>
+        motion:duration="2000"
+        motion:motionInterpolator="cubic(0.72,0.19,0.19,0.87)">
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/tainghe"
+               motion:framePosition="50"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.2"
+               motion:percentY="0.5" />
+       </KeyFrameSet>
         <OnClick motion:targetId="@+id/button" />
     </Transition>
 
@@ -18,7 +26,7 @@
         <Constraint
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/imageView11"
+            android:id="@+id/tainghe"
             motion:layout_editor_absoluteX="204dp"
             motion:layout_constraintBottom_toBottomOf="@+id/imageView14"
             motion:layout_constraintTop_toTopOf="@+id/imageView14"
@@ -26,7 +34,7 @@
         <Constraint
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/imageView28"
+            android:id="@+id/mayanh"
             motion:layout_editor_absoluteY="290dp"
             motion:layout_editor_absoluteX="209dp" />
         <Constraint
@@ -62,14 +70,15 @@
             motion:layout_editor_absoluteX="209dp"
             motion:layout_constraintBottom_toBottomOf="@+id/imageView14"
             android:layout_width="wrap_content"
-            android:id="@+id/imageView28"
+            android:id="@+id/mayanh"
             motion:layout_constraintTop_toTopOf="@+id/imageView14"
             android:alpha="0" />
     </ConstraintSet>
     <Transition
         motion:constraintSetStart="@+id/end"
         motion:constraintSetEnd="@+id/next"
-        motion:duration="2000">
+        motion:duration="2000"
+        motion:motionInterpolator="cubic(0.51,0.06,0.8,0.8)">
         <OnClick motion:targetId="@+id/button5" />
     </Transition>
     <ConstraintSet
@@ -78,7 +87,7 @@
         <Constraint
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/imageView13"
+            android:id="@+id/game"
             motion:layout_editor_absoluteX="157dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="@+id/imageView14"

@@ -10,11 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab_01_MotionLayout">
         <activity
-            android:name=".Screen02"
-            android:exported="true" />
-        <activity
             android:name=".Screen01"
             android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
